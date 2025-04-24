@@ -1,0 +1,8 @@
+.nav-link[href*="profile"] {
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav-link[href*="profile"]:hover {
+    color: #007bff !important;
+    text-decoration: underline;
+}

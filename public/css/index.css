@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #4361ee;
+    --primary-dark: #3949ab;
+    --primary-light: #4f97ff;
+    --secondary-color: #f8f9fc;
+    --accent-color: #fe9365;
+    --success-color: #5cdb95;
+    --warning-color: #feca57;
+    --danger-color: #ff6b6b;
+    --text-light: #ffffff;
+    --text-dark: #2c3e50;
+    --text-muted: #6c757d;
+    --border-color: #e9ecef;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f7f9fc;
+    color: var(--text-dark);
+}
+
+
+.navbar {
+    box-shadow: var(--shadow-md);
+    background: linear-gradient(120deg, var(--primary-color), var(--primary-dark)) !important;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--text-light) !important;
+    letter-spacing: 0.5px;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    margin: 0 2px;
+    border-radius: 6px;
+}
+
+.nav-link:hover {
+    color: var(--text-light) !important;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-light) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+.welcome-banner {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark), #5e60ce);
+    color: var(--text-light);
+    padding: 60px 0;
+    margin-bottom: 30px;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    box-shadow: var(--shadow-md);
+}
+
+.welcome-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    z-index: 1;
+    border-radius: 0 0 20px 20px;
+    opacity: 0.5;
+}
+
+.welcome-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.selamat-text {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.selamat-subtext {
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+main {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    padding: 30px !important;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    font-weight: 600;
+    padding: 15px 20px;
+    color: var(--primary-dark);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+.btn-primary {
+    background: linear-gradient(to right, var(--primary-color), var(--primary-dark));
+    border: none;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(67, 97, 238, 0.3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary-color));
+    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.4);
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(1px);
+}
+
+
+.btn-success {
+    background: linear-gradient(to right, var(--success-color), #3cb371);
+    box-shadow: 0 2px 5px rgba(92, 219, 149, 0.3);
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #3cb371, var(--success-color));
+    box-shadow: 0 4px 10px rgba(92, 219, 149, 0.4);
+}
+
+.btn-warning {
+    background: linear-gradient(to right, var(--warning-color), #f9a825);
+    box-shadow: 0 2px 5px rgba(254, 202, 87, 0.3);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(to right, #f9a825, var(--warning-color));
+    box-shadow: 0 4px 10px rgba(254, 202, 87, 0.4);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, var(--danger-color), #e53935);
+    box-shadow: 0 2px 5px rgba(255, 107, 107, 0.3);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #e53935, var(--danger-color));
+    box-shadow: 0 4px 10px rgba(255, 107, 107, 0.4);
+}
+
+
+footer {
+    background: linear-gradient(to right, #2c3e50, #3d5363);
+    color: var(--text-light);
+    padding: 25px 0;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.auth-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: rgba(255,255,255,0.15);
+    border-radius: 6px;
+    margin-right: 10px;
+    transition: all 0.2s ease;
+}
+
+.auth-badge:hover {
+    background-color: rgba(255,255,255,0.25);
+}
+
+
+@media (max-width: 768px) {
+    .selamat-text {
+        font-size: 2rem;
+    }
+    .welcome-banner {
+        padding: 40px 0;
+    }
+    .navbar-nav {
+        padding-top: 10px;
+    }
+    .nav-link {
+        padding: 10px 15px;
+        margin: 2px 0;
+        display: block;
+    }
+}

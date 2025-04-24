@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-header {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    padding: 25px 30px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.profile-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to right, rgba(255,255,255,0.3), transparent);
+}
+
+.profile-body {
+    padding: 30px;
+}
+
+.profile-detail {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background: #f7f7f7;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #a777e3;
+}
+
+.profile-label {
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 3px;
+}
+
+.profile-value {
+    font-size: 1.1rem;
+}
+
+.profile-footer {
+    padding: 20px 30px;
+    background: #f9fafc;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+    }
+    
+    .profile-header {
+        padding: 20px;
+        font-size: 1.3rem;
+    }
+    
+    .profile-body {
+        padding: 20px;
+    }
+}
