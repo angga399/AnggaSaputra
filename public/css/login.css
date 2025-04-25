@@ -135,3 +135,38 @@ body {
 .text-muted {
     color: #5c8ad6;
 }
+/* Tambahkan ini ke login.css Anda */
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.forgot-password a {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+    color: var(--primary-hover);
+}

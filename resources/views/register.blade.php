@@ -15,14 +15,16 @@
                         <h4 class="card-title">Register</h4>
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="register.php">
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <div class="form-group">
                                 <label for="nama" class="form-label">Nama</label>
-                                <input id="nama" type="text" class="form-control" 
-                                       name="nama" value="" placeholder="Masukkan nama lengkap" required autofocus>
-                                <div class="invalid-feedback" style="display: none;"></div>
+                                <input id="nama" type="text" class="form-control @error('nama') is-invalid @enderror" 
+                                       name="nama" value="{{ old('nama') }}" placeholder="Masukkan nama lengkap" required autofocus>
+                                @error('nama')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
                             </div>
-
                             <div class="form-group">
                                 <label for="email" class="form-label">Email</label>
                                 <input id="email" type="email" class="form-control" 

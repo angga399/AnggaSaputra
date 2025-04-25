@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
-    <link href="{{asset("css/login.css")}}" rel="stylesheet">
+    <link href="{{asset('css/login.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
- 
 </head>
 <body>
     <div class="login-container">
@@ -49,11 +48,19 @@
                         @enderror
                     </div>
                     
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                        <label class="form-check-label" for="remember">
-                            Remember Me
-                        </label>
+                    <div class="form-options">
+                        <div class="remember-me">
+                            <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                            <label class="form-check-label" for="remember">
+                                Remember Me
+                            </label>
+                        </div>
+                        
+                        <div class="forgot-password">
+                            <a href="{{ route('password.request') }}" class="text-link">
+                                Lupa Password?
+                            </a>
+                        </div>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">
