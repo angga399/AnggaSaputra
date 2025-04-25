@@ -16,7 +16,7 @@
             </div>
             <div class="card-body">
                 <div class="register-link">
-                    <a href="{{ route('register') }}">Belum punya akun? Register di sini!!</a>
+                    <p class="text-muted">Belum punya akun? <a class="text-link" href="{{ route('register') }}">Register</a></p>
                 </div>
                 
                 <form method="POST" action="{{ route('login') }}">
@@ -54,10 +54,6 @@
                         <label class="form-check-label" for="remember">
                             Remember Me
                         </label>
-                    </div>
-                    
-                    <div class="forgot-password">
-                        <a href="#">Lupa password?</a>
                     </div>
                     
                     <button type="submit" class="btn btn-primary">

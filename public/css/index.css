@@ -57,14 +57,21 @@ body {
     margin: 0 2px;
     border-radius: 6px;
 }
-
-.nav-link:hover {
+.nav-item {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 8px 15px;
+    margin: 0 2px;
+    border-radius: 6px;
+}
+.nav-item:hover {
     color: var(--text-light) !important;
     background-color: rgba(255, 255, 255, 0.15);
     transform: translateY(-1px);
 }
 
-.nav-link.active {
+.nav-item.active {
     background-color: rgba(255, 255, 255, 0.2);
     color: var(--text-light) !important;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);

@@ -41,13 +41,13 @@
                         <i class="fas fa-calendar-alt"></i>
                     </div>
                     <div class="profile-info">
-                        <div class="profile-label">Bergabung Sejak</div>
+                        <div class="profile-label">join</div>
                         <div class="profile-value">{{ $user->created_at->format('d F Y') }}</div>
                     </div>
                 </div>
             </div>
             <div class="profile-footer">
-                Terakhir diperbarui: {{ date('d F Y') }}
+                terakhir liat mah pas: {{ date('d F Y') }}
             </div>
         </div>
     </div>

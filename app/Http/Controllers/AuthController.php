@@ -20,6 +20,8 @@ class AuthController extends Controller
             "password" => "required",
         ]);
 
+        $remember = $request->has('remember'); 
+        
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
             return redirect()->intended("/");

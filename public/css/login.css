@@ -126,19 +126,12 @@ body {
     margin-top: 5px;
 }
 
-.forgot-password {
-    text-align: right;
-    margin-top: -12px;
-    margin-bottom: 20px;
-}
-
-.forgot-password a {
-    color: var(--text-muted);
-    font-size: 13px;
+.text-link{
+    color: #1a73e8;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.forgot-password a:hover {
-    color: var(--primary);
-    text-decoration: underline;
+.text-muted {
+    color: #5c8ad6;
 }
